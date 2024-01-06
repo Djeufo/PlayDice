@@ -13,7 +13,7 @@ function replaceTheDices() {
     if (number1 == number2) {
         document.querySelector('.winner-title').innerHTML = "Draw!!";
     } else if (number1 > number2) {
-        document.querySelector('.winner-title').innerHTML = "Player 1 🚩 wins!!";
+        document.querySelector('.winner-title').innerHTML = "Player 1 wins!! 🚩";
     } else if (number1 < number2) {
         document.querySelector('.winner-title').innerHTML = "🚩 Player 2 wins!!";
     }
