@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Play dice</h1>
+        <div>
+            <button class="btnPlayer1" onclick="replaceTheDices()">Play</button>
+        </div>
+        <div class="dice">
+            <p>Player 1</p>
+            <img class="img1" src="./images/dice1.png">
+        </div>
+
+        <div class="dice">
+            <p>Player 2</p>
+            <img class="img2" src="./images/dice6.png">
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        function replaceTheDices() {
+
+            var mol1 = Math.floor(Math.random() * 6) + 1;
+            if (mol1 >= 1 && mol1 <= 6) {
+                document.querySelector('.img1').setAttribute('src', './images/dice' + mol1 + '.png');
+            }
+
+            var mol2 = Math.floor(Math.random() * 6) + 1;
+            if (mol2 >= 1 && mol2 <= 6) {
+                document.querySelector('.img2').setAttribute('src', './images/dice' + mol2 + '.png');
+            }
+        }
+    </script>
+</body>
+
+<footer>
+    www 🎲 App play dice 🎲 com
+</footer>
+
+</html>
